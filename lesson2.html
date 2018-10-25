@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson2</title>
+  <script>
+    console.log("Первое задание");
+    var a = 1, b = 1, c, d;
+    c = ++a; console.log(c); // 2 сначало прибавили
+    d = b++; console.log(d); // 1 запомнили и врибавим позже
+    c = (2+ ++a); console.log(c); // 5 2+1+2
+    d = (2+ b++); console.log(d); // 4 1+2+1(запомнили +1)
+    console.log(a); // 3 1+1+1 два раза встретилось ++
+    console.log(b); // 3 1+1+1 два раза встретилось ++
+    
+    
+    console.log("Второе задание");
+    var a = 2;
+    var x = 1 + (a *= 2);
+    console.log(x); //5 = 1+(2*2)
+    
+    
+    console.log("Третье задание");
+    var a = -2, b = -6;
+    if (a > 0 && b > 0) {
+      console.log("Оба числа положительны: " + (a - b));
+    } else if (a < 0 && b < 0){
+      console.log("Оба числа отрицательны: " + (a * b));
+    } else {
+      console.log("Разные знаки: " + (a + b));
+    }
+    
+    
+    console.log("Четвертое задание");
+    var switch1 = 6;
+    switch(switch1) {
+      case switch1 = 0:
+        console.log(0);
+      case switch1 = 1:
+        console.log(1);
+      case switch1 = 2:
+        console.log(2);
+      case switch1 = 3:
+        console.log(3);
+      case switch1 = 4:
+        console.log(4);
+      case switch1 = 5:
+        console.log(5);
+      case switch1 = 6:
+        console.log(6);
+      case switch1 = 7:
+        console.log(7);
+      case switch1 = 8:
+        console.log(8);
+      case switch1 = 9:
+        console.log(9);
+      case switch1 = 10:
+        console.log(10);
+      case switch1 = 11:
+        console.log(11);
+      case switch1 = 12:
+        console.log(12);
+      case switch1 = 13:
+        console.log(13);
+      case switch1 = 14:
+        console.log(14);
+      case switch1 = 15:
+        console.log(15);
+      break;
+    }
+    
+    
+    console.log("Пятое задание");
+    function sum(sum1, sum2){
+      console.log(sum1 + sum2);
+    };
+    function neg(neg1, neg2){
+      console.log(neg1 - neg2);
+    };
+    function div(div1, div2){
+      console.log(div1 / div2);
+    };
+    function mul(mul1, mul2){
+      console.log(mul1 * mul2);
+    };
+    sum(5, 3);
+    neg(5, 3);
+    div(5, 3);
+    mul(5, 3);
+    
+    
+    console.log("шестое задание");
+    //operation - функции из 5 задания
+    function mathOperation(arg1, arg2, operation) {
+      switch(operation) {
+        case operation = sum:
+          sum(arg1, arg2);
+          break;
+        case operation = neg:
+          neg(arg1, arg2);
+          break;
+        case operation = div:
+          div(arg1, arg2);
+          break;
+        case operation = mul:
+          mul(arg1, arg2);
+          break;
+      };
+    };
+    mathOperation(9, 5, sum);
+    mathOperation(9, 5, neg);
+    mathOperation(9, 5, div);
+    mathOperation(9, 5, mul);
+    
+    console.log("");
+    console.log("");
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
