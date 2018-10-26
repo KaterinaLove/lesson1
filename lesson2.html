@@ -113,7 +113,25 @@
     mathOperation(9, 5, mul);
     
     console.log("Задание семь");
+    var nol = 0;
+    var nul = null;
+    sum(nol, nul);
+    neg(nol, nul);
+    div(nol, nul);
+    mul(nol, nul);
+    console.log("Равно ли 0 null: ", anser = nol == nul);
+    console.log("0 < null: ", anser = nol < nul);
+    console.log("0 > null: ", anser = nol > nul);
+    
     console.log("Задание восемь");
+    function recursion (val, pow){
+      //val – заданное число, pow – степень
+      if (pow > 1) {
+        val = (recursion(val * val, pow - 1) );
+      }; 
+      console.log(val, pow);
+    };
+    recursion(5, 3);
   </script>
 </head>
 <body>
